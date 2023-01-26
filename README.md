@@ -2,6 +2,8 @@
 
 Super simple incident report static page.
 
+[Demo](https://jitesoft.github.io/incidents/).
+
 Makes use of GitHub issues to query for incidents, renders GitHub issues markdown
 with [showdown](https://github.com/showdownjs/showdown)
 and displays the latest 30 as a list.
