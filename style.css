@@ -1,0 +1,68 @@
+html {
+    font-family: Consolas, monospace;
+}
+.incident {
+    padding: 1em;
+    margin: 0 auto 5em;
+    border: 1px black solid;
+    box-shadow: 10px 5px 5px darkgray;
+    max-width: 80%;
+}
+.incident > h3 {
+    text-align: center;
+}
+.status-badge {
+    float: left;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+.incident > .closed {
+    color: blue;
+}
+.incident > .open {
+    color: red;
+}
+.incident-content {
+    padding: 3em;
+    background-color: #eeeeee;
+}
+h1 {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+.labels {
+    float: right;
+    right: 0;
+    top: 0;
+    max-width: 200px;
+    max-height: 150px;
+    display: flex;
+    flex-flow: column;
+}
+.label {
+    font-size: 0.75em;
+    background-color: cornflowerblue;
+    border: none;
+    color: black;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+}
+.power {
+    position: absolute;
+    right: 4em;
+    top: 2em;
+    font-size: 0.8em;
+}
