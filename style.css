@@ -1,16 +1,49 @@
 html {
     font-family: Consolas, monospace;
 }
+
+.light {
+    /* global background and text */
+    background-color: aliceblue;
+    color: black;
+}
+
+.dark {
+    /* global background and text */
+    background-color: #222222;
+    color: wheat;
+}
+
 .incident {
     padding: 1em;
     margin: 0 auto 5em;
     border: 1px black solid;
-    box-shadow: 10px 5px 5px darkgray;
     max-width: 80%;
 }
+
+.mode-switcher {
+    position: absolute;
+    top:2em;
+    left: 2em;
+    color: black;
+    width: 3em;
+    height: 3em;
+    border-radius: 1em;
+    float: right;
+}
+
+.light .incident {
+    box-shadow: 10px 5px 5px darkgray;
+}
+
+.dark .incident {
+    box-shadow: 10px 5px 5px black;
+}
+
 .incident > h3 {
     text-align: center;
 }
+
 .status-badge {
     float: left;
     background-color: #ddd;
@@ -23,22 +56,35 @@ html {
     margin: 4px 2px;
     border-radius: 16px;
 }
+
 .incident > .closed {
     color: blue;
 }
+
 .incident > .open {
     color: red;
 }
+
 .incident-content {
     padding: 3em;
+}
+
+.light .incident-content {
     background-color: #eeeeee;
 }
+
+.dark .incident-content {
+    background-color: #222222 !important;
+}
+
 h1 {
     text-align: center;
 }
+
 img {
     max-width: 100%;
 }
+
 .labels {
     float: right;
     right: 0;
@@ -48,6 +94,7 @@ img {
     display: flex;
     flex-flow: column;
 }
+
 .label {
     font-size: 0.75em;
     background-color: cornflowerblue;
@@ -60,6 +107,7 @@ img {
     margin: 4px 2px;
     border-radius: 16px;
 }
+
 .power {
     position: absolute;
     right: 4em;

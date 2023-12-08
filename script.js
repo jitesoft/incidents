@@ -45,3 +45,21 @@ const run = async () => {
   }
 };
 run();
+
+// Light/Dark mode!
+const modeButton = document.querySelector('.mode-switcher');
+
+modeButton.addEventListener('click', (self) => {
+  const bodyClasses = document.body.classList;
+  if (bodyClasses.contains('light')) {
+    self.target.innerText = '🌞';
+    bodyClasses.remove('light');
+    bodyClasses.add('dark');
+  } else {
+    self.target.innerText = '🌙';
+    bodyClasses.remove('dark');
+    bodyClasses.add('light');
+  }
+
+
+});

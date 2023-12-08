@@ -40,3 +40,17 @@ MIT (check [LICENSE](LICENSE) file).
 ## Dependencies
 
 Incidents makes use of [showdown](https://github.com/showdownjs/showdown) to render markdown.
+
+### Development
+
+Currently, there is one JS file, one CSS file and one HTML file, the project
+can run by opening the HTML file in the browser.
+
+Change `script` and `style` tags to include the local script and css file and work!
+
+Minification is done with:
+
+```shell
+npx minify script.js > script.min.js
+npx minify style.css > style.min.css
+```

@@ -16,13 +16,15 @@
         "baseUri": "https://api.github.com/repos"
       };
     </script>
-    <link rel="stylesheet" href="https://jitesoft.github.io/incidents/style.min.css">
+    <link rel="stylesheet" href="./style.min.css">
 </head>
-<body>
+<body class="light">
 <h1>Incidents</h1>
+<button title="Change between light and dark mode" class="mode-switcher">🌙</button>
 <span class="power">
     Powered by <a href="https://github.com/jitesoft/incidents">@jitesoft/incidents</a>
 </span>
+
 <template id="incident">
     <div class="incident">
         <div class="labels" data-ref="labels"></div>
@@ -39,4 +41,4 @@
 <div id="app"></div>
 </body>
 </html>
-<script type="text/javascript" src="https://jitesoft.github.io/incidents/script.min.js"></script>
+<script type="text/javascript" src="./script.min.js"></script>
